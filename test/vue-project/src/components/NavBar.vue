@@ -24,11 +24,11 @@ import { RouterLink, RouterView } from "vue-router";
           <RouterLink class="nav-link active" to="/">Home</RouterLink>
         </li>
         <li class="nav-item">
-          <!-- <a class="nav-link" href="#">Link</a> -->
-          <RouterLink class="nav-link" to="/about">About</RouterLink>
+          <RouterLink class="nav-link" to="/shoplist">Shop list</RouterLink>
         </li>
         <li class="nav-item">
-          <RouterLink class="nav-link" to="">To Shop list</RouterLink>
+          <!-- <a class="nav-link" href="#">Link</a> -->
+          <RouterLink class="nav-link" to="/about">About</RouterLink>
         </li>
       </ul>
     </div>
@@ -64,7 +64,7 @@ import { RouterLink, RouterView } from "vue-router";
   color: rgba(255, 255, 255, 0.767);
   font-weight: 500;
 }
-.navbar-brand{
-    height: 5vh;
+.navbar-brand {
+  height: 5vh;
 }
 </style>

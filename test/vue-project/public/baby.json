@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "jacket",
+    "price": "500 kr"
+  },
+
+  {
+    "id": "2",
+    "name": "jacket",
+    "price": "500 kr",
+    "image" : "../src/assets/img/happy-cute-baby-lying-on-white-sheet-1070045180_1257x838.jpeg"
+  },
+
+  {
+    "id": "3",
+    "name": "jacket",
+    "price": "500 kr"
+  },
+
+  {
+    "id": "4",
+    "name": "jacket",
+    "price": "500 kr"
+  },
+
+  {
+    "id": "5",
+    "name": "jacket",
+    "price": "500 kr"
+  },
+
+  {
+    "id": "6",
+    "name": "jacket",
+    "price": "500 kr"
+  },
+
+  {
+    "id": "7",
+    "name": "jacket",
+    "price": "500 kr"
+  },
+
+  {
+    "id": "8",
+    "name": "jacket",
+    "price": "500 kr"
+  },
+
+  {
+    "id": "9",
+    "name": "jacket",
+    "price": "500 kr"
+  },
+
+  {
+    "id": "10",
+    "name": "jacket",
+    "price": "500 kr"
+  }
+]

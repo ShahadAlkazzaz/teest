@@ -1,0 +1,24 @@
+<script></script>
+
+<template>
+  <div>
+    <div class="card" style="width: 18rem">
+
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <img
+        src="../assets/img/happy-cute-baby-lying-on-white-sheet-1070045180_1257x838.jpeg"
+        class="card-img-bottom"
+        alt="..."
+      />
+    </div>
+  </div>
+</template>
+
+<style></style>

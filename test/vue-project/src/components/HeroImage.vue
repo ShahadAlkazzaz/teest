@@ -12,7 +12,7 @@
       <p>50-70% OFF</p>
     </div>
     <div class="down">
-      <p>Winter sale</p>
+      <p>Winter Sale</p>
     </div>
   </div>
 </template>
@@ -30,11 +30,11 @@
 }
 .upp {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
   animation-name: example;
   animation-duration: 10s;
@@ -43,10 +43,10 @@
 
 .down {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
   color: black;
 }
