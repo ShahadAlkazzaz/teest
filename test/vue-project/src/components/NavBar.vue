@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from "vue-router";
   </ul> -->
   <div class="title">
     <!-- <a class="navbar-brand" href="#">Market</a> -->
-    <RouterLink class="navbar-brand" to="/">Market</RouterLink>
+    <RouterLink class="navbar-brand" to="/">Baby Shop</RouterLink>
   </div>
 
   <div class="collapse" id="navbarToggleExternalContent">
@@ -55,13 +55,16 @@ import { RouterLink, RouterView } from "vue-router";
 .title {
   color: rgba(255, 255, 255, 0.767);
   background-color: #212529;
-  height: 11vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 #textNavBar {
   color: rgba(255, 255, 255, 0.767);
   font-weight: 500;
+}
+.navbar-brand{
+    height: 5vh;
 }
 </style>

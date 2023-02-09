@@ -59,7 +59,7 @@
     background-color: rgb(63, 200, 191);
   }
   50% {
-    background-color: blue;
+    background-color: rgb(75, 75, 196);
   }
   100% {
     background-color: rgb(216, 39, 136);
