@@ -6,7 +6,7 @@ import FooterSide from "./components/FooterSide.vue";
 <template>
   <NavBar />
 
-<FooterSide />
+<!-- <FooterSide /> -->
 
 </template>
 

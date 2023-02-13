@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-  <div>
+  <div class="col">
     <div class="card" style="width: 18rem">
       <div class="card-body">
         <h5 class="card-title">{{ sale.name }}</h5>
@@ -10,7 +10,7 @@
         </p>
         <a href="#" class="btn btn-primary">BUY</a>
       </div>
-      <img src="../assets/img/jeans.jpg" class="card-img-bottom" alt="..." />
+      <img :src="sale.image"  class="card-img-bottom" alt="..." />
     </div>
   </div>
 </template>

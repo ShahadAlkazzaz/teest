@@ -15,6 +15,7 @@ import ClothesOffers from "../components/ClothesOffers.vue";
           v-for="clothe in clothes"
           :key="clothe.id"
           :sale="clothe"
+          :img="image"
         />
         <!-- <ClothesOffers /> -->
       </div>
