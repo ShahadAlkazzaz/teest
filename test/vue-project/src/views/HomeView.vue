@@ -6,17 +6,19 @@ import ClothesOffers from "../components/ClothesOffers.vue";
 <template>
   <HeroImage />
 
- <h1 class="kataloge">{{ message }}</h1>
+  <h1 class="kataloge">{{ message }}</h1>
 
   <div class="all-kataloge">
-
     <div class="container text-center">
-  <div class="row align-items-start">
-    <div class="col">
-        <ClothesOffers />
+      <div class="row align-items-start">
+        <clothe-offers
+          v-for="clothe in clothes"
+          :key="clothe.id"
+          :sale="clothe"
+        />
+        <!-- <ClothesOffers /> -->
+      </div>
     </div>
-  </div>
-</div>
   </div>
 </template>
 
@@ -25,14 +27,27 @@ export default {
   data() {
     return {
       message: "Kataloge",
+      clothes: [],
     };
+  },
+
+  components: { "clothe-offers": ClothesOffers },
+  mounted() {
+    this.fetchData();
+  },
+  methods: {
+    async fetchData() {
+      const res = await fetch("baby.json");
+      const result = await res.json();
+      this.clothes = result;
+    },
   },
 };
 </script>
 
 <style scoped>
-.all-kataloge{
-    margin-top: 15vh;
+.all-kataloge {
+  margin-top: 15vh;
 }
 .kataloge,
 h1 {

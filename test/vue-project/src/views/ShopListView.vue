@@ -13,7 +13,7 @@ import ToDoList from "../components/ToShopList.vue";
 export default {
   data() {
     return {
-      message: "To Shop List",
+      message: "Shop List",
     };
   },
 };
@@ -30,7 +30,7 @@ export default {
   animation-duration: 5s;
   animation-iteration-count: 30;
   height: 60px;
-  width: 230px;
+  width: 180px;
   border: 10px;
   border-radius: 10px;
 }

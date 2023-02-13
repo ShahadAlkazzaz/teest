@@ -3,22 +3,27 @@
 <template>
   <div>
     <div class="card" style="width: 18rem">
-
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">{{ sale.name }}</h5>
         <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {{ sale.price }}
         </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary">BUY</a>
       </div>
-      <img
-        src="../assets/img/happy-cute-baby-lying-on-white-sheet-1070045180_1257x838.jpeg"
-        class="card-img-bottom"
-        alt="..."
-      />
+      <img src="../assets/img/jeans.jpg" class="card-img-bottom" alt="..." />
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    sale: {
+      required: true,
+      type: Object,
+    },
+  },
+};
+</script>
 
 <style></style>

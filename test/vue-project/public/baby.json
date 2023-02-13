@@ -2,61 +2,70 @@
   {
     "id": "1",
     "name": "jacket",
-    "price": "1000 kr"
+    "price": "999 kr",
+    "image": "../src/assets/img/jacket rose.jpg"
   },
 
   {
     "id": "2",
     "name": "jacket",
-    "price": "500 kr",
-    "image" : "../src/assets/img/happy-cute-baby-lying-on-white-sheet-1070045180_1257x838.jpeg"
+    "price": "1050 kr",
+    "image": "../src/assets/img/jacket blue.jpg"
   },
 
   {
     "id": "3",
-    "name": "jacket",
-    "price": "500 kr"
+    "name": "jeans",
+    "price": "600 kr",
+    "image": "../src/assets/img/jeans.jpg"
   },
 
   {
     "id": "4",
-    "name": "jacket",
-    "price": "500 kr"
+    "name": "t-shirt",
+    "price": "2500 kr",
+    "image": "../src/assets/img/tshirt.jpg"
   },
 
   {
     "id": "5",
-    "name": "jacket",
-    "price": "500 kr"
+    "name": "t-shirt",
+    "price": "150 kr",
+    "image": "../src/assets/img/shark.jpg"
   },
 
   {
     "id": "6",
     "name": "jacket",
-    "price": "500 kr"
+    "price": "300 kr",
+    "image": "../src/assets/img/mom dad.jpg"
   },
 
   {
     "id": "7",
-    "name": "jacket",
-    "price": "500 kr"
+    "name": "overall",
+    "price": "600 kr",
+    "image": "../src/assets/img/overrall blue.jpg"
   },
 
   {
     "id": "8",
-    "name": "jacket",
-    "price": "500 kr"
+    "name": "overall",
+    "price": "600 kr",
+    "image": "../src/assets/img/overall.jpg"
   },
 
   {
     "id": "9",
-    "name": "jacket",
-    "price": "500 kr"
+    "name": "overall",
+    "price": "400 kr",
+    "image": "../src/assets/img/bear.jpg"
   },
 
   {
     "id": "10",
-    "name": "jacket",
-    "price": "500 kr"
+    "name": "shoes",
+    "price": "350 kr",
+    "image": "../src/assets/img/shoes.jpg"
   }
 ]

@@ -4,7 +4,7 @@
   <div class="container">
     <form action="">
       <input type="text" placeholder="Type your task" v-model="taskText" />
-      <button @click.prevent="addTask" :disabled="!taskText">Add Task</button>
+      <button @click.prevent="addTask" :disabled="!taskText">Add</button>
       <button
         class="delete-all" v-if="tasks.length > 1"
         @click.prevent="deleteAll"
