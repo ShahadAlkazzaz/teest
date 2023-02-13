@@ -1,6 +1,7 @@
 <script setup>
 import HeroImage from "../components/HeroImage.vue";
 import ClothesOffers from "../components/ClothesOffers.vue";
+import FooterSide from "../components/FooterSide.vue";
 </script>
 
 <template>
@@ -9,8 +10,8 @@ import ClothesOffers from "../components/ClothesOffers.vue";
   <h1 class="kataloge">{{ message }}</h1>
 
   <div class="all-kataloge">
-    <div class="container text-center">
-      <div class="row align-items-start">
+    <div  class="container text-center">
+      <div id="clothes-container" class="row align-items-start">
         <clothe-offers
           v-for="clothe in clothes"
           :key="clothe.id"
@@ -21,6 +22,7 @@ import ClothesOffers from "../components/ClothesOffers.vue";
       </div>
     </div>
   </div>
+  <FooterSide />
 </template>
 
 <script>
@@ -49,7 +51,12 @@ export default {
 <style scoped>
 .all-kataloge {
   margin-top: 15vh;
+  /* gap: 15px; */
+
 }
+/* #clothes-container{
+
+} */
 .kataloge,
 h1 {
   display: flex;

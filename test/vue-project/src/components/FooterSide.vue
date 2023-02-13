@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 <template>
 <!-- Footer -->
-<footer class="bg-dark text-center text-white">
+<footer id="all-footer" class="bg-dark text-center text-white">
   <!-- Grid container -->
   <div class="container p-4">
     <!-- Section: Social media -->
@@ -98,8 +98,13 @@ import { RouterLink, RouterView } from "vue-router";
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+
   <RouterView />
 </template>
 
 <style scoped>
+
+#all-footer{
+    margin-top: 50vh;
+}
 </style>

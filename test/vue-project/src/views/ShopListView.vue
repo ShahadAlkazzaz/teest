@@ -1,21 +1,27 @@
 <script setup>
-import ToDoList from "../components/ToShopList.vue";
+// import ToDoList from "../components/ToShopList.vue";
+import ToShopList from "../components/ToShopList.vue";
+import FooterSide from "../components/FooterSide.vue";
+
 </script>
 
 <template>
   <div class="container-title">
     <h1 class="title-text">{{ message }}</h1>
   </div>
-  <ToDoList />
+  <ToShopList />
+  <!-- <ToDoList /> -->
+  <FooterSide />
 </template>
 
 <script scoped>
 export default {
-  data() {
-    return {
-      message: "Shop List",
-    };
-  },
+    data() {
+        return {
+            message: "Shop List",
+        };
+    },
+    components: { ToShopList }
 };
 </script>
 <style scoped>
@@ -40,7 +46,7 @@ export default {
     background-color: rgb(233, 143, 192);
   }
   25% {
-    background-color:rgb(227, 107, 173);
+    background-color: rgb(227, 107, 173);
   }
   50% {
     background-color: rgb(248, 102, 182);
