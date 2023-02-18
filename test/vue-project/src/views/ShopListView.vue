@@ -10,7 +10,7 @@ import FooterSide from "../components/FooterSide.vue";
     <h1 class="title-text">{{ message }}</h1>
   </div>
   <ToShopList />
-  <!-- <ToDoList /> -->
+
   <FooterSide />
 </template>
 
@@ -36,7 +36,7 @@ export default {
   animation-duration: 5s;
   animation-iteration-count: 30;
   height: 60px;
-  width: 180px;
+  width: 200px;
   border: 10px;
   border-radius: 10px;
 }

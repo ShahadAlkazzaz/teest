@@ -31,6 +31,7 @@ export default {
     return {
       message: "Kataloge",
       clothes: [],
+      buy:0,
     };
   },
 

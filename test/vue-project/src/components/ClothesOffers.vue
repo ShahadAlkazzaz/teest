@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-  <div class="col">
+  <div id="photos" class="col">
     <div class="card" style="width: 18rem">
       <div class="card-body">
         <h5 class="card-title">{{ sale.name }}</h5>
@@ -26,4 +26,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+#photos{
+    margin-bottom: 50px;
+}
+</style>

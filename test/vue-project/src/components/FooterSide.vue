@@ -18,25 +18,11 @@ import { RouterLink, RouterView } from "vue-router";
         ><i class="fab fa-twitter"></i
       ></a>
 
-      <!-- Google -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-google"></i
-      ></a>
-
       <!-- Instagram -->
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-instagram"></i
       ></a>
 
-      <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-github"></i
-      ></a>
     </section>
     <!-- Section: Social media -->
 
@@ -127,7 +113,7 @@ export default {
 <style scoped>
 
 #all-footer{
-    margin-top: 50vh;
+    margin-top: 30vh;
 }
 
 #massage{
