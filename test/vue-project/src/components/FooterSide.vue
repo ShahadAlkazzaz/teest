@@ -42,7 +42,7 @@ import { RouterLink, RouterView } from "vue-router";
 
     <!-- Section: Form -->
     <section class="">
-      <form action="">
+      <form @submit="onSubmit" action="">
         <!--Grid row-->
         <div class="row d-flex justify-content-center">
           <!--Grid column-->
@@ -57,8 +57,8 @@ import { RouterLink, RouterView } from "vue-router";
           <div class="col-md-5 col-12">
             <!-- Email input -->
             <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example21" class="form-control" />
-              <label class="form-label" for="form5Example21">Email address</label>
+              <input type="email" v-model="userName" id="form5Example21" class="form-control"  />
+              <label id="massage" v-if="message !== null" class="form-label" for="form5Example21">{{ message }}</label>
             </div>
           </div>
           <!--Grid column-->
@@ -66,9 +66,10 @@ import { RouterLink, RouterView } from "vue-router";
           <!--Grid column-->
           <div class="col-auto">
             <!-- Submit button -->
-            <button type="submit" class="btn btn-outline-light mb-4">
+            <input type="submit" :disabled="userName.length === 0" class="btn btn-outline-light mb-4" value="Subscribe" />
+            <!-- <button type="submit" class="btn btn-outline-light mb-4">
               Subscribe
-            </button>
+            </button> -->
           </div>
           <!--Grid column-->
         </div>
@@ -93,7 +94,8 @@ import { RouterLink, RouterView } from "vue-router";
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2020 Copyright:
-    <a class="text-white" href="https://BabyShop.com/">BabyShop.com</a>
+    <RouterLink class="navbar-brand" to="/">BabyShop.com</RouterLink>
+    <!-- <a class="text-white" href="https://BabyShop.com/">BabyShop.se</a> -->
   </div>
   <!-- Copyright -->
 </footer>
@@ -102,9 +104,35 @@ import { RouterLink, RouterView } from "vue-router";
   <RouterView />
 </template>
 
+
+<script>
+export default {
+  data() {
+    return {
+        message : null,
+        userName:""
+    };
+  },
+
+  methods: {
+    onSubmit(event) {
+        this.message =`Thanks for subscribing  ${this.userName}`
+       event.preventDefault()
+    },
+  },
+
+};
+</script>
+
 <style scoped>
 
 #all-footer{
     margin-top: 50vh;
+}
+
+#massage{
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
 }
 </style>
