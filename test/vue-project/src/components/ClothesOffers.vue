@@ -8,9 +8,11 @@
         <p class="card-text">
           {{ sale.price }}
         </p>
-        <a href="#" class="btn btn-primary">BUY</a>
+        <input @click="increase" type="button" class="btn btn-primary"  value="Buy" >
+        <!-- <a href="#" class="btn btn-primary">BUY</a> -->
       </div>
       <img :src="sale.image"  class="card-img-bottom" alt="..." />
+
     </div>
   </div>
 </template>
@@ -22,12 +24,19 @@ export default {
       required: true,
       type: Object,
     },
+    value:""
+
   },
+//   props:["value"]
+
 };
 </script>
 
 <style scoped>
 #photos{
     margin-bottom: 50px;
+}
+.card-img-bottom{
+    height: 58vh;
 }
 </style>

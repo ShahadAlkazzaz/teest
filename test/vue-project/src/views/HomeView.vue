@@ -18,9 +18,14 @@ import FooterSide from "../components/FooterSide.vue";
           :sale="clothe"
           :img="image"
         />
+        <input  type="button" class="btn btn-primary" :value="value">
         <!-- <ClothesOffers /> -->
       </div>
     </div>
+
+    <p>
+        {{ value }}
+      </p>
   </div>
   <FooterSide />
 </template>
@@ -31,7 +36,7 @@ export default {
     return {
       message: "Kataloge",
       clothes: [],
-      buy:0,
+      value:0,
     };
   },
 
@@ -45,7 +50,12 @@ export default {
       const result = await res.json();
       this.clothes = result;
     },
+    increase() {
+        this.value = this.value +1
+      },
+
   },
+
 };
 </script>
 
